@@ -10,7 +10,7 @@ def str2bool(v):
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train')
-    parser.add_argument('--data-dir', default='dataset/train/datasets', help='data path')
+    parser.add_argument('--data-dir', default='/kaggle/working/rgbt/dataset/train/datasets', help='data path')
     parser.add_argument('--dataset', default='nwpu', help='dataset name: qnrf, nwpu, sha, shb')
     parser.add_argument('--lr', type=float, default=1e-5,
                         help='the initial learning rate')
